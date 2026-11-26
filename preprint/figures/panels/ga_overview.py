@@ -1,7 +1,8 @@
 """Graphical Abstract: Minimal-text three-stage visual overview (zero gray boxes)."""
+import json
 import matplotlib.patches as mpatches
 import numpy as np
-from style import PAL
+from style import DATA_DIR, PAL
 
 
 def draw(fig):
@@ -118,10 +119,18 @@ def draw(fig):
     ax.text(156, 46.5, "Human selection (gnomAD)", fontsize=7.0, fontweight="bold",
             color=PAL["ink"], ha="center", va="top")
 
-    # Mini inset axes for F0=syn non-CpG SNVs observed (%)
+    # Mini inset axes for F0=syn non-CpG SNVs observed (%) — loaded dynamically from master_preprint_data.json
+    gn = json.loads((DATA_DIR / "master_preprint_data.json").read_text())["gnomad_v4"]
+    t_ab = gn["POOLED_AB"]["tests"]["nonCpG_all__F0syn_p2STOP_vs_nonSTOP"]
+    t_2c = gn["PRRC2C_NEGCTRL"]["tests"]["nonCpG_all__F0syn_p2STOP_vs_nonSTOP"]
+    v_ns = t_ab["nonstop"]["pct"]
+    v_st = t_ab["stop"]["pct"]
+    v_2c = t_2c["stop"]["pct"]
+    st_lbl = f"{t_ab['stop']['obs']}/{t_ab['stop']['tot']}"
+
     ax_bar = fig.add_axes([0.755, 0.21, 0.225, 0.56])
     cats = ["A+B\nnon-STOP", "A+B\n+2 STOP", "2C\n+2 STOP"]
-    vals = [17.8, 0.0, 17.6]
+    vals = [v_ns, v_st, v_2c]
     cols = [PAL["frame0"], PAL["prrc2a"], PAL["prrc2c"]]
     xs = np.arange(3)
     bars = ax_bar.bar(xs, vals, width=0.58, color=cols, edgecolor="none")
@@ -133,8 +142,8 @@ def draw(fig):
     ax_bar.tick_params(axis="both", labelsize=5.1, length=2.2, pad=1.5)
     ax_bar.spines["top"].set_visible(False)
     ax_bar.spines["right"].set_visible(False)
-    for b, v, txt in zip(bars, vals, ["17.8%", "0/35", "17.6%"]):
+    for b, v, txt in zip(bars, vals, [f"{v_ns:.1f}%", st_lbl, f"{v_2c:.1f}%"]):
         ax_bar.text(b.get_x() + b.get_width() / 2, v + 0.9, txt,
                     ha="center", va="bottom", fontsize=5.2,
-                    fontweight="bold" if txt == "0/35" else "normal",
-                    color=PAL["prrc2a"] if txt == "0/35" else PAL["ink"])
+                    fontweight="bold" if txt == st_lbl else "normal",
+                    color=PAL["prrc2a"] if txt == st_lbl else PAL["ink"])

@@ -10,19 +10,10 @@ def draw(fig):
     d = json.loads((DATA_DIR / "master_preprint_data.json").read_text())
     evo = d["evolutionary_origin"]
 
-    # Aligned 11-aa C-terminal signature (positions corresponding to VVWARTKPPP + flanking)
-    # Using verified sequences from master_preprint_data.json
+    # Dynamically populated from master_preprint_data.json (computed from data/metazoan_prrc2_cds.fa + hg38)
     rows = [
-        ("D. melanogaster (nocte)", 680, False, 4, "-----------"),
-        ("S. kowalevskii (Acorn worm)", 580, True, 0, "STIWSWTKPKT"),
-        ("S. purpuratus (Sea urchin)", 580, True, 0, "GPVWTRTKSKT"),
-        ("B. floridae (Amphioxus)", 550, True, 0, "AAIWPWTKPPP"),
-        ("P. marinus (Sea lamprey)", 500, True, 0, "RYVWARTKPPP"),
-        ("C. milii (Shark prrc2b)", 465, True, 0, "SVIWARTKPPP"),
-        ("C. milii (Shark prrc2c)", 465, False, 12, "-----------"),
-        ("H. sapiens PRRC2A", 0, True, 0, "TVVWARTKPPP"),
-        ("H. sapiens PRRC2B", 0, True, 0, "SVVWARTKPPP"),
-        ("H. sapiens PRRC2C", 0, False, 10, "-----------"),
+        (r["display_label"], r["mya"], r["plus2_intact"], r["stops_p2_core"], r["motif_11aa"])
+        for r in evo
     ]
     n = len(rows)
     ys = np.arange(n)[::-1]

@@ -16,8 +16,8 @@ def draw(fig):
         float(np.mean(gt["PRRC2B"]["canonical_introns_reads"])),
     ]
     alt = [
-        float(gt["PRRC2A"]["top_alt_exon_skip_reads"]),
-        float(gt["PRRC2B"]["top_alt_junction_reads"]),
+        float(gt["PRRC2A"]["top_alt_internal_junction"]["reads"]),
+        float(gt["PRRC2B"]["top_alt_internal_junction"]["reads"]),
     ]
 
     ax.bar(x - w / 2, canon, width=w, color=[PAL["prrc2a"], PAL["prrc2b"]], label="Canonical", zorder=3)

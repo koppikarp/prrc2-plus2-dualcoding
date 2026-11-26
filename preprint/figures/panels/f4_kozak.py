@@ -25,9 +25,9 @@ def draw(fig):
 
     x = np.arange(3)
     w = 0.34
-    b1 = ax.bar(x - w / 2, f0_t_pct, width=w, color=PAL["frame0"], label="F0 weak (+4T)", zorder=3)
+    b1 = ax.bar(x - w / 2, f0_t_pct, width=w, color=PAL["frame0"], label="F0 suboptimal (+4T)", zorder=3)
     b2 = ax.bar(x + w / 2, p2_opt_pct, width=w,
-                color=[PAL["prrc2a"], PAL["prrc2b"], PAL["prrc2c"]], label="+2 optimal (R..G)", zorder=3)
+                color=[PAL["prrc2a"], PAL["prrc2b"], PAL["prrc2c"]], label="+2 optimal (R..G; by gene)", zorder=3)
 
     for b, v in zip(b2, p2_opt_pct):
         ax.text(b.get_x() + b.get_width() / 2, v + 2.0, f"{v:.0f}%",
