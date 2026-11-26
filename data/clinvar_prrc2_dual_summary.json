@@ -1,0 +1,1122 @@
+[
+  {
+    "variant_id": "4840619",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2026/02/26 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_013318.4(PRRC2B):c.667C>A (p.Leu223Met)",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "4572708",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2025/11/24 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_013318.4(PRRC2B):c.593G>A (p.Gly198Glu)",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "4572678",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2025/10/29 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_013318.4(PRRC2B):c.394G>A (p.Glu132Lys)",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "4572666",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2025/10/18 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_013318.4(PRRC2B):c.274G>T (p.Asp92Tyr)",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "4572663",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2025/12/10 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_004638.4(PRRC2A):c.613A>G (p.Thr205Ala)",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "4572637",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2025/09/22 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_004638.4(PRRC2A):c.438C>A (p.Ser146Arg)",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "4353244",
+    "clinical_significance": "Unknown",
+    "review_status": "Unknown",
+    "last_evaluated": "1/01/01 00:00",
+    "phenotypes": [],
+    "title": "NM_013318.4(PRRC2B):c.613+103T>A",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "intron variant"
+    ]
+  },
+  {
+    "variant_id": "4353243",
+    "clinical_significance": "Unknown",
+    "review_status": "Unknown",
+    "last_evaluated": "1/01/01 00:00",
+    "phenotypes": [],
+    "title": "NM_013318.4(PRRC2B):c.397-3C>G",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "intron variant"
+    ]
+  },
+  {
+    "variant_id": "4325584",
+    "clinical_significance": "Unknown",
+    "review_status": "Unknown",
+    "last_evaluated": "1/01/01 00:00",
+    "phenotypes": [],
+    "title": "NM_004638.4(PRRC2A):c.464-9T>A",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "intron variant"
+    ]
+  },
+  {
+    "variant_id": "4325583",
+    "clinical_significance": "Unknown",
+    "review_status": "Unknown",
+    "last_evaluated": "1/01/01 00:00",
+    "phenotypes": [],
+    "title": "NM_004638.4(PRRC2A):c.463+63T>G",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "intron variant"
+    ]
+  },
+  {
+    "variant_id": "4325582",
+    "clinical_significance": "Unknown",
+    "review_status": "Unknown",
+    "last_evaluated": "1/01/01 00:00",
+    "phenotypes": [],
+    "title": "NM_004638.4(PRRC2A):c.412G>A (p.Gly138Arg)",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "4325581",
+    "clinical_significance": "Unknown",
+    "review_status": "Unknown",
+    "last_evaluated": "1/01/01 00:00",
+    "phenotypes": [],
+    "title": "NM_004638.4(PRRC2A):c.291-2A>T",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "splice acceptor variant"
+    ]
+  },
+  {
+    "variant_id": "4325580",
+    "clinical_significance": "Unknown",
+    "review_status": "Unknown",
+    "last_evaluated": "1/01/01 00:00",
+    "phenotypes": [],
+    "title": "NM_004638.4(PRRC2A):c.291-3C>G",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "intron variant"
+    ]
+  },
+  {
+    "variant_id": "4145531",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2025/08/25 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_013318.4(PRRC2B):c.506C>T (p.Pro169Leu)",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "4145515",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2025/07/31 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_013318.4(PRRC2B):c.332C>A (p.Pro111Gln)",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "4145498",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2025/08/05 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_013318.4(PRRC2B):c.682A>G (p.Thr228Ala)",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "4145470",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2025/08/21 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_013318.4(PRRC2B):c.250G>A (p.Gly84Arg)",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "4145449",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2025/08/09 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_004638.4(PRRC2A):c.512C>T (p.Pro171Leu)",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "4145414",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2025/08/04 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_004638.4(PRRC2A):c.347C>T (p.Thr116Met)",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "3938917",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2025/04/14 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_013318.4(PRRC2B):c.637G>A (p.Gly213Ser)",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "3938910",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2025/03/19 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_013318.4(PRRC2B):c.530C>T (p.Ala177Val)",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "3938909",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2025/04/29 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_013318.4(PRRC2B):c.488G>A (p.Arg163Gln)",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "3938898",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2025/05/06 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_013318.4(PRRC2B):c.311C>G (p.Ser104Cys)",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "3938894",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2025/05/17 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_013318.4(PRRC2B):c.581C>T (p.Ser194Leu)",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "3938868",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2025/05/25 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_004638.4(PRRC2A):c.638G>A (p.Arg213His)",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "3783876",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2025/02/25 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_004638.4(PRRC2A):c.499C>G (p.Arg167Gly)",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "3426167",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2024/10/07 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_013318.4(PRRC2B):c.320C>T (p.Pro107Leu)",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "3426163",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2024/08/27 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_013318.4(PRRC2B):c.496T>A (p.Ser166Thr)",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "3426150",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2024/07/10 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_013318.4(PRRC2B):c.338C>G (p.Pro113Arg)",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "3426134",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2024/09/11 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_013318.4(PRRC2B):c.560A>T (p.Glu187Val)",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "3426122",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2024/10/09 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_004638.4(PRRC2A):c.413G>A (p.Gly138Glu)",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "3219670",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2024/03/01 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_013318.4(PRRC2B):c.568G>A (p.Val190Ile)",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "3219655",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2024/02/13 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_013318.4(PRRC2B):c.374C>T (p.Pro125Leu)",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "3219648",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2024/03/04 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_013318.4(PRRC2B):c.299G>C (p.Ser100Thr)",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "3219621",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2023/10/03 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_004638.4(PRRC2A):c.637C>T (p.Arg213Cys)",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "3219616",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2025/01/09 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_004638.4(PRRC2A):c.599G>A (p.Arg200His)",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "3219604",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2023/09/20 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_004638.4(PRRC2A):c.433G>A (p.Ala145Thr)",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "3219601",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2023/09/23 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_004638.4(PRRC2A):c.415G>A (p.Val139Ile)",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "3219591",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2023/10/27 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_004638.4(PRRC2A):c.314C>T (p.Pro105Leu)",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "3059974",
+    "clinical_significance": "Benign",
+    "review_status": "no assertion criteria provided",
+    "last_evaluated": "2019/04/08 00:00",
+    "phenotypes": [
+      "PRRC2A-related disorder"
+    ],
+    "title": "NM_004638.4(PRRC2A):c.317C>T (p.Pro106Leu)",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "3056017",
+    "clinical_significance": "Benign",
+    "review_status": "no assertion criteria provided",
+    "last_evaluated": "2019/02/27 00:00",
+    "phenotypes": [
+      "PRRC2A-related disorder"
+    ],
+    "title": "NM_004638.4(PRRC2A):c.636G>T (p.Gly212=)",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "synonymous variant"
+    ]
+  },
+  {
+    "variant_id": "3050606",
+    "clinical_significance": "Benign",
+    "review_status": "no assertion criteria provided",
+    "last_evaluated": "2019/02/19 00:00",
+    "phenotypes": [
+      "PRRC2A-related disorder"
+    ],
+    "title": "NM_004638.4(PRRC2A):c.488C>T (p.Ser163Leu)",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "3038722",
+    "clinical_significance": "Likely benign",
+    "review_status": "no assertion criteria provided",
+    "last_evaluated": "2019/05/23 00:00",
+    "phenotypes": [
+      "PRRC2A-related disorder"
+    ],
+    "title": "NM_004638.4(PRRC2A):c.391-6C>A",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "intron variant"
+    ]
+  },
+  {
+    "variant_id": "2522928",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2023/06/05 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_004638.4(PRRC2A):c.575C>T (p.Ser192Leu)",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "2457238",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2025/08/04 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_004638.4(PRRC2A):c.545C>G (p.Ala182Gly)",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "2402049",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2022/06/29 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_013318.4(PRRC2B):c.649A>G (p.Ile217Val)",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "2401614",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2025/09/26 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_004638.4(PRRC2A):c.547G>T (p.Ala183Ser)",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "2383307",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2021/06/22 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_013318.4(PRRC2B):c.332C>T (p.Pro111Leu)",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "2353247",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2025/03/26 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_004638.4(PRRC2A):c.335C>A (p.Pro112Gln)",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "2325756",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2025/07/15 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_004638.4(PRRC2A):c.541A>G (p.Lys181Glu)",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "2277970",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2024/05/28 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_004638.4(PRRC2A):c.608A>T (p.Asn203Ile)",
+    "genes": [
+      {
+        "gene_id": "7916",
+        "symbol": "PRRC2A",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "2264936",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2021/12/06 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_013318.4(PRRC2B):c.649A>C (p.Ile217Leu)",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "2235027",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2021/07/06 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_013318.4(PRRC2B):c.692G>A (p.Gly231Asp)",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  },
+  {
+    "variant_id": "2218317",
+    "clinical_significance": "Uncertain significance",
+    "review_status": "criteria provided, single submitter",
+    "last_evaluated": "2021/08/02 00:00",
+    "phenotypes": [
+      "not specified"
+    ],
+    "title": "NM_013318.4(PRRC2B):c.496T>G (p.Ser166Ala)",
+    "genes": [
+      {
+        "gene_id": "84726",
+        "symbol": "PRRC2B",
+        "strand": "+"
+      }
+    ],
+    "variation_type": "single nucleotide variant",
+    "molecular_consequences": [
+      "missense variant"
+    ]
+  }
+]

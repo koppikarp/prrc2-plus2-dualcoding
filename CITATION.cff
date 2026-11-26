@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this preprint, verified datasets, figure scripts, or analysis pipeline, please cite this work."
+type: dataset
+title: "An Uncharacterized 600-Million-Year-Old +2 Dual-Coding Gene Family Embedded Inside the Human Leaky-Scanning Regulators PRRC2A and PRRC2B"
+authors:
+  - family-names: Koppikar
+    given-names: Pratik
+    affiliation: "University of Cambridge"
+    email: "psk34@cam.ac.uk"
+    orcid: "https://orcid.org/0000-0001-5089-5584"
+date-released: "2026-11-26"
+version: "1.0.0"
+repository-code: "https://github.com/koppikarp/prrc2-plus2-dualcoding"
+license: "MIT"
+keywords:
+  - dual-coding genes
+  - overlapping reading frames
+  - PRRC2A
+  - PRRC2B
+  - PRRC2C
+  - BAT2
+  - alt-PRRC2A
+  - alt-PRRC2B
+  - uoORF
+  - translational reinitiation
+  - gnomAD
+  - comparative genomics
