@@ -1,0 +1,384 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[letterpaper,left=0.60in,right=0.60in,top=0.72in,bottom=0.72in,headheight=19pt]{geometry}
+\usepackage{fontspec}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[hidelinks]{hyperref}
+\urlstyle{same}
+
+\setmainfont{Arial}[
+  Scale=0.92,
+  BoldFont={Arial Bold},
+  ItalicFont={Arial Italic},
+  BoldItalicFont={Arial Bold Italic}
+]
+\setsansfont{Arial}[Scale=0.92]
+\setmonofont{Arial}[Scale=0.92]
+
+\linespread{1.08}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\definecolor{RuleGray}{HTML}{BDBDBD}
+\color{black}
+
+\titleformat{\section}
+  {\fontsize{11.5}{14}\selectfont\bfseries\color{black}}
+  {}{0pt}{}
+  [\vspace{-3pt}\textcolor{RuleGray}{\rule{\textwidth}{0.5pt}}]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{RuleGray}\leaders\hrule height \headrulewidth\hfill}}
+\fancyhead[L]{\footnotesize\color{black}Koppikar (2026) \textbar\ Supplementary Information: 600-My +2 dual-coding gene family inside human \textit{PRRC2A} and \textit{PRRC2B}}
+\fancyhead[R]{\footnotesize\color{black}Supplementary Information}
+\fancyfoot[C]{\footnotesize\color{black}S\thepage\ / S\pageref{LastPage}}
+
+\newcommand{\gene}[1]{\textit{#1}}
+\newcommand{\spname}[1]{\textit{#1}}
+
+\begin{document}
+
+\noindent{\fontsize{13.5}{17}\selectfont\bfseries\color{black}\raggedright
+Supplementary Information\\[3pt]
+An Uncharacterized 600-Million-Year-Old +2 Dual-Coding Gene Family Embedded Inside the Human Leaky-Scanning Regulators \gene{PRRC2A} and \gene{PRRC2B}\par}
+\vspace{4pt}
+\noindent{\small Pratik Koppikar\textsuperscript{1,*} \;\textbar\; \textsuperscript{1}University of Cambridge, Cambridge, United Kingdom \;\textbar\; \href{mailto:psk34@cam.ac.uk}{psk34@cam.ac.uk}\\
+Repository and raw datasets: \url{https://github.com/koppikarp/prrc2-plus2-dualcoding}\par}
+\vspace{3pt}
+\noindent{\color{RuleGray}\rule{\textwidth}{0.7pt}}
+
+\section*{Contents}
+\begin{itemize}
+  \item \textbf{Supplementary Table S1:} Top 35 ranked candidates from the genome-wide 23,183-gene 100-vertebrate dual-coding screen.
+  \item \textbf{Supplementary Table S2:} Deep metazoan evolutionary origin (10 animal lineages, 680 Myr) and complete Panel-32 / 100-way vertebrate comparative selection statistics.
+  \item \textbf{Supplementary Table S3:} Complete gnomAD v4.1 (807,162 exomes/genomes, QC-PASS) mutation-class-stratified contingency tables, exact CMH/MLE odds ratios, and GTEx v2 Snaptron splice-junction read counts ($\sim 19,000$ samples).
+  \item \textbf{Supplementary Table S4:} Complete dual-frame re-annotation of all 45 ClinVar coding SNVs in \gene{PRRC2A} and \gene{PRRC2B} coding exons 2--6.
+  \item \textbf{Supplementary Table S5:} Complete catalog of all 42 genomically audited single-nucleotide silent-Frame-0 / nonsense-Frame-+2 knockout switches across \gene{PRRC2A} ($n=22$) and \gene{PRRC2B} ($n=20$).
+\end{itemize}
+
+\newpage
+\section*{Supplementary Table S1: Top 35 Hits From the 23,183-Gene 100-Vertebrate Screen}
+\noindent{\footnotesize Raw uncurated top 35 hits across 23,183 canonical hg38 transcripts (3,904 deduplicated raw hits before filtering out single-exon ORFs, readthrough transcripts, and previously characterized overlapping genes). Multi-exon \gene{PRRC2B} (rank 2) and \gene{PRRC2A} (rank 29) are highlighted in bold.\par}
+\vspace{3pt}
+{\scriptsize\setlength{\tabcolsep}{3.2pt}\renewcommand{\arraystretch}{1.08}
+\begin{longtable}{@{}rlcrrrrrlr@{}}
+\toprule
+\textbf{Rank} & \textbf{Gene / Transcript} & \textbf{Frame} & \textbf{Alt aa} & \textbf{4D in} & \textbf{4D out} & \textbf{$\Delta$4D} & \textbf{Stop-free} & \textbf{Structure} & \textbf{Score} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Rank} & \textbf{Gene / Transcript} & \textbf{Frame} & \textbf{Alt aa} & \textbf{4D in} & \textbf{4D out} & \textbf{$\Delta$4D} & \textbf{Stop-free} & \textbf{Structure} & \textbf{Score} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+1 & ENSG00000260272 & +1 & 58 & 0.948 & 0.578 & $+0.369$ & 25/25 & 2 exons & 106.7 \\
+2 & \textbf{PRRC2B (ENST00000357304.8)} & +2 & 142 & 0.891 & 0.624 & $+0.267$ & 22/24 & 5 exons & 104.6 \\
+3 & RPL17-C18orf32 & +2 & 52 & 0.869 & 0.531 & $+0.338$ & 21/23 & Single-exon & 101.5 \\
+4 & OR5G3 & +2 & 195 & 0.815 & 0.568 & $+0.247$ & 17/20 & Single-exon & 101.5 \\
+5 & ATPAF2 & +1 & 56 & 0.941 & 0.652 & $+0.289$ & 17/21 & 3 exons & 95.9 \\
+6 & HSPH1 & +1 & 59 & 0.900 & 0.612 & $+0.288$ & 18/21 & 2 exons & 95.0 \\
+7 & ENSG00000255835 & +1 & 178 & 0.851 & 0.618 & $+0.233$ & 19/21 & 4 exons & 94.6 \\
+8 & SMG1 & +1 & 52 & 0.943 & 0.631 & $+0.312$ & 21/21 & 2 exons & 94.3 \\
+9 & ENSG00000251357 & +2 & 55 & 0.887 & 0.628 & $+0.260$ & 17/17 & 2 exons & 92.9 \\
+10 & ENSG00000281287 & +2 & 55 & 0.882 & 0.623 & $+0.259$ & 16/16 & 2 exons & 92.7 \\
+11 & SFMBT2 & +1 & 51 & 0.894 & 0.575 & $+0.318$ & 19/20 & 2 exons & 92.4 \\
+12 & WAC & +1 & 187 & 0.837 & 0.709 & $+0.128$ & 23/24 & 6 exons & 91.1 \\
+13 & ENSG00000256206 & +2 & 64 & 0.823 & 0.576 & $+0.248$ & 22/24 & 3 exons & 90.8 \\
+14 & RET & +1 & 79 & 0.795 & 0.582 & $+0.212$ & 19/25 & 2 exons & 90.8 \\
+15 & SLC43A2 & +1 & 55 & 0.924 & 0.657 & $+0.267$ & 18/22 & 3 exons & 90.2 \\
+16 & HMCN1 & +1 & 52 & 0.927 & 0.615 & $+0.312$ & 20/20 & Single-exon & 90.1 \\
+17 & LYSMD4 & +2 & 68 & 0.878 & 0.568 & $+0.310$ & 21/22 & 2 exons & 90.0 \\
+18 & ISY1-RAB43 & +2 & 55 & 0.914 & 0.603 & $+0.311$ & 19/23 & 2 exons & 89.8 \\
+19 & PLSCR3 & +1 & 53 & 0.966 & 0.713 & $+0.253$ & 25/25 & Single-exon & 89.5 \\
+20 & PLEKHM2 & +1 & 73 & 0.871 & 0.663 & $+0.208$ & 24/24 & Single-exon & 89.4 \\
+21 & ENST00000621137.1 & +2 & 69 & 0.796 & 0.509 & $+0.287$ & 11/13 & 3 exons & 88.6 \\
+22 & BPTF & +1 & 104 & 0.832 & 0.662 & $+0.170$ & 23/24 & 3 exons & 88.1 \\
+23 & PCNT & +1 & 55 & 0.904 & 0.600 & $+0.304$ & 13/13 & 2 exons & 88.0 \\
+24 & ENSG00000271810 & +1 & 251 & 0.980 & 0.911 & $+0.069$ & 20/24 & 8 exons & 87.9 \\
+25 & GOLGA8F & +1 & 51 & 0.850 & 0.487 & $+0.363$ & 9/13 & 2 exons & 87.5 \\
+26 & KIAA1217 & +1 & 82 & 0.794 & 0.586 & $+0.209$ & 17/22 & Single-exon & 87.3 \\
+27 & CCAR1 & +1 & 74 & 0.871 & 0.658 & $+0.213$ & 22/23 & 2 exons & 87.1 \\
+28 & MROH7-TTC4 & +2 & 54 & 0.951 & 0.755 & $+0.196$ & 14/14 & 2 exons & 86.9 \\
+29 & \textbf{PRRC2A (ENST00000454306.6)} & +2 & 130 & 0.900 & 0.689 & $+0.210$ & 20/21 & 5 exons & 86.8 \\
+30 & GOLGA8G & +1 & 51 & 0.836 & 0.482 & $+0.353$ & 9/13 & 2 exons & 86.8 \\
+31 & ENPP2 & +1 & 79 & 0.801 & 0.623 & $+0.178$ & 18/20 & 4 exons & 86.8 \\
+32 & PKP4 & +1 & 85 & 0.863 & 0.659 & $+0.204$ & 22/24 & 3 exons & 86.6 \\
+33 & ZNF326 & +1 & 84 & 0.963 & 0.792 & $+0.171$ & 20/21 & 2 exons & 86.6 \\
+34 & ENSG00000272822 & +2 & 50 & 0.868 & 0.590 & $+0.279$ & 11/14 & Single-exon & 85.9 \\
+35 & ENSG00000284461 & +1 & 52 & 0.978 & 0.766 & $+0.211$ & 16/21 & 3 exons & 85.9 \\
+\end{longtable}
+}
+
+\newpage
+\section*{Supplementary Table S2: Metazoan Origin and Vertebrate Comparative Selection Audit}
+\noindent{\footnotesize\textbf{Table S2a.} Deep evolutionary origin and paralog-specific loss of \gene{alt-PRRC2} across 10 representative animal lineages spanning 680 million years.\par}
+\vspace{3pt}
+{\scriptsize\setlength{\tabcolsep}{3.0pt}\renewcommand{\arraystretch}{1.10}
+\begin{longtable}{@{}llrlllcl@{}}
+\toprule
+\textbf{Taxon / Paralog} & \textbf{Clade} & \textbf{Mya} & \textbf{Accession} & \textbf{+2 Stops} & \textbf{+1 Stops} & \textbf{+2 Status} & \textbf{Core 11-aa Motif} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+D. melanogaster (nocte) & Protostome (Arthropoda) & 680 & \texttt{NP\_001245614.1} & 4 & 4 & Lost/Absent & \texttt{-----------} \\
+S. kowalevskii (Acorn worm) & Hemichordata (Acorn worm) & 580 & \texttt{XP\_077866102.1} & 0 & 3 & Intact & \texttt{STIWSWTKPKT} \\
+S. purpuratus (Sea urchin) & Echinodermata (Sea urchin) & 580 & \texttt{XP\_030852947.1} & 0 & 5 & Intact & \texttt{GPVWTRTKSKT} \\
+B. floridae (Amphioxus) & Cephalochordata (Amphioxus) & 550 & \texttt{XP\_035683835.1} & 0 & 0 & Intact & \texttt{AAIWPWTKPPP} \\
+P. marinus (Sea lamprey) & Agnatha (Sea lamprey) & 500 & \texttt{XP\_032802661.2} & 0 & 3 & Intact & \texttt{RYVWARTKPPP} \\
+C. milii (Shark prrc2b) & Chondrichthyes (Elephant shark) & 465 & \texttt{XM\_042337680.1} & 0 & 5 & Intact & \texttt{SVIWARTKPPP} \\
+C. milii (Shark prrc2c) & Chondrichthyes (Elephant shark) & 465 & \texttt{XM\_042335521.1} & 13 & 7 & Lost/Absent & \texttt{-----------} \\
+H. sapiens PRRC2A & Mammalia (Human) & 0 & \texttt{ENSG00000289282 / A0A8I5QKQ9} & 0 & 1 & Intact & \texttt{TVVWARTKPPP} \\
+H. sapiens PRRC2B & Mammalia (Human) & 0 & \texttt{ENSG00000288841 / A0A8I5KXM2} & 0 & 8 & Intact & \texttt{SVVWARTKPPP} \\
+H. sapiens PRRC2C & Mammalia (Human) & 0 & \texttt{ENST00000338920.8} & 10 & 2 & Lost/Absent & \texttt{-----------} \\
+\end{longtable}
+}
+
+\vspace{8pt}
+\noindent{\footnotesize\textbf{Table S2b.} Complete Panel-32 vertebrate comparative selection statistics comparing \gene{PRRC2A} and \gene{PRRC2B} against the pseudogenized paralog control \gene{PRRC2C} (strict non-stop-risk 4D identity, 8-clade collapse, 5-frame stop purging vs.\ flanking-codon null and hg38 within-window codon-bag null, 100-way stop-free census, and +2 amino-acid preservation at Frame-0-divergent sites).\par}
+\vspace{3pt}
+{\scriptsize\setlength{\tabcolsep}{2.6pt}\renewcommand{\arraystretch}{1.12}
+\begin{longtable}{@{}lclllllll@{}}
+\toprule
+\textbf{Gene} & \textbf{$n_32$} & \textbf{NSR-4D in / out ($\Delta$)} & \textbf{1-s $P$} & \textbf{8-Clade $\Delta$ ($P$)} & \textbf{+2 Stops vs.\ null ($P$)} & \textbf{Codon-bag ($P$)} & \textbf{100-way} & \textbf{+2 AA pres.} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\gene{PRRC2A} & 22 & 0.874 / 0.613 ($+0.262$) & $2.38 \times 10^{-7}$ & $+0.259$ (0.0039) & 0.05 vs.\ 6.15 ($2.38 \times 10^{-7}$) & 0 vs.\ 4.61 (0.0020) & 74/84 & 28.8\% \\
+\gene{PRRC2B} & 26 & 0.868 / 0.570 ($+0.298$) & $1.49 \times 10^{-8}$ & $+0.289$ (0.0039) & 0.08 vs.\ 5.97 ($2.98 \times 10^{-8}$) & 0 vs.\ 4.19 (0.0040) & 94/98 & 53.5\% \\
+\gene{PRRC2C} & 26 & 0.702 / 0.579 ($+0.123$) & $1.49 \times 10^{-8}$ & $+0.121$ (0.0039) & 9.91 vs.\ 11.02 (0.0095) & 10 vs.\ 12.49 (0.1349) & 0/85 & 8.3\% \\
+\end{longtable}
+}
+
+\newpage
+\section*{Supplementary Table S3: gnomAD v4.1 Constraint and GTEx v2 Splice-Junction Audit}
+\noindent{\footnotesize\textbf{Table S3a.} Mutation-class-stratified observed/possible QC-PASS SNV counts in gnomAD v4.1 (807,162 exomes and genomes) holding Frame-0 consequence strictly constant.\par}
+\vspace{3pt}
+{\scriptsize\setlength{\tabcolsep}{3.5pt}\renewcommand{\arraystretch}{1.08}
+\begin{longtable}{@{}lllllll@{}}
+\toprule
+\textbf{Cohort} & \textbf{Stratum} & \textbf{F0-syn / +2 non-STOP} & \textbf{F0-syn / +2 STOP} & \textbf{F0-mis / +2 SYN} & \textbf{F0-mis / +2 MIS} & \textbf{F0-mis / +2 STOP} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Cohort} & \textbf{Stratum} & \textbf{F0-syn / +2 non-STOP} & \textbf{F0-syn / +2 STOP} & \textbf{F0-mis / +2 SYN} & \textbf{F0-mis / +2 MIS} & \textbf{F0-mis / +2 STOP} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+PRRC2A & CpG Ti & 12/14 & 1/5 (AC=1) & 14/14 & 11/12 & 0/0 \\
+PRRC2A & non-CpG Ti & 27/106 & 0/6 (AC=0) & 46/105 & 22/90 & 1/16 \\
+PRRC2A & Tv & 15/151 & 0/11 (AC=0) & 23/151 & 51/411 & 1/20 \\
+PRRC2B & CpG Ti & 13/14 & 1/2 (AC=2) & 15/15 & 4/5 & 0/0 \\
+PRRC2B & non-CpG Ti & 38/126 & 0/6 (AC=0) & 40/117 & 31/105 & 2/14 \\
+PRRC2B & Tv & 14/150 & 0/12 (AC=0) & 20/140 & 48/472 & 1/30 \\
+Pooled A+B & CpG Ti & 25/28 & 2/7 (AC=3) & 29/29 & 15/17 & 0/0 \\
+Pooled A+B & non-CpG Ti & 65/232 & 0/12 (AC=0) & 86/222 & 53/195 & 3/30 \\
+Pooled A+B & Tv & 29/301 & 0/23 (AC=0) & 43/291 & 99/883 & 2/50 \\
+Pooled A+B (no $\pm 2$ bp) & CpG Ti & 25/28 & 2/7 (AC=3) & 29/29 & 15/17 & 0/0 \\
+Pooled A+B (no $\pm 2$ bp) & non-CpG Ti & 63/220 & 0/12 (AC=0) & 83/214 & 52/187 & 3/26 \\
+Pooled A+B (no $\pm 2$ bp) & Tv & 28/295 & 0/23 (AC=0) & 43/287 & 94/833 & 1/46 \\
+PRRC2C (neg.\ ctrl) & CpG Ti & 1/1 & 0/0 (AC=0) & 2/2 & 1/1 & 0/0 \\
+PRRC2C (neg.\ ctrl) & non-CpG Ti & 34/115 & 3/7 (AC=3) & 42/108 & 39/96 & 6/22 \\
+PRRC2C (neg.\ ctrl) & Tv & 19/117 & 0/10 (AC=0) & 9/107 & 64/433 & 1/35 \\
+\end{longtable}
+}
+
+\vspace{6pt}
+\noindent{\footnotesize\textbf{Table S3b.} Three-stratum exact hypergeometric Cochran--Mantel--Haenszel (CMH) tests and exact conditional MLE odds ratios with exact conditional 95\% confidence intervals (zero continuity hacks).\par}
+\vspace{3pt}
+{\scriptsize\setlength{\tabcolsep}{3.2pt}\renewcommand{\arraystretch}{1.08}
+\begin{longtable}{@{}llrrrrr@{}}
+\toprule
+\textbf{Cohort} & \textbf{Contrast} & \textbf{MH OR} & \textbf{Exact MLE OR} & \textbf{Exact 95\% CI} & \textbf{Exact 1-s $P$} & \textbf{Exact 2-s $P$} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Cohort} & \textbf{Contrast} & \textbf{MH OR} & \textbf{Exact MLE OR} & \textbf{Exact 95\% CI} & \textbf{Exact 1-s $P$} & \textbf{Exact 2-s $P$} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+PRRC2A & F0-syn: +2 STOP vs.\ non-STOP & 0.021 & 0.043 & [0.001, 0.458] & 0.0011 & 0.0019 \\
+PRRC2A & F0-mis: +2 MIS vs.\ +2 SYN & 0.584 & 0.591 & [0.394, 0.890] & 0.0056 & 0.0104 \\
+PRRC2A & F0-mis: +2 STOP vs.\ +2 SYN & 0.150 & 0.138 & [0.015, 0.582] & 0.0011 & 0.0022 \\
+PRRC2B & F0-syn: +2 STOP vs.\ non-STOP & 0.017 & 0.060 & [0.001, 0.779] & 0.0110 & 0.0176 \\
+PRRC2B & F0-mis: +2 MIS vs.\ +2 SYN & 0.722 & 0.719 & [0.475, 1.097] & 0.0652 & 0.1172 \\
+PRRC2B & F0-mis: +2 STOP vs.\ +2 SYN & 0.266 & 0.271 & [0.051, 0.919] & 0.0160 & 0.0300 \\
+Pooled A+B & F0-syn: +2 STOP vs.\ non-STOP & 0.019 & 0.041 & [0.003, 0.261] & $9.06 \times 10^{-6}$ & $1.28 \times 10^{-5}$ \\
+Pooled A+B & F0-mis: +2 MIS vs.\ +2 SYN & 0.645 & 0.647 & [0.486, 0.864] & 0.0015 & 0.0027 \\
+Pooled A+B & F0-mis: +2 STOP vs.\ +2 SYN & 0.201 & 0.199 & [0.061, 0.510] & $5.34 \times 10^{-5}$ & $1.16 \times 10^{-4}$ \\
+Pooled A+B (no $\pm 2$ bp) & F0-syn: +2 STOP vs.\ non-STOP & 0.019 & 0.041 & [0.003, 0.259] & $8.59 \times 10^{-6}$ & $1.23 \times 10^{-5}$ \\
+Pooled A+B (no $\pm 2$ bp) & F0-mis: +2 MIS vs.\ +2 SYN & 0.651 & 0.653 & [0.488, 0.875] & 0.0020 & 0.0039 \\
+Pooled A+B (no $\pm 2$ bp) & F0-mis: +2 STOP vs.\ +2 SYN & 0.172 & 0.177 & [0.045, 0.498] & $6.58 \times 10^{-5}$ & $1.04 \times 10^{-4}$ \\
+PRRC2C (neg.\ ctrl) & F0-syn: +2 STOP vs.\ non-STOP & 0.763 & 0.775 & [0.135, 3.010] & 0.4905 & 1.0000 \\
+PRRC2C (neg.\ ctrl) & F0-mis: +2 MIS vs.\ +2 SYN & 1.355 & 1.341 & [0.859, 2.122] & 0.9280 & 0.2033 \\
+PRRC2C (neg.\ ctrl) & F0-mis: +2 STOP vs.\ +2 SYN & 0.510 & 0.517 & [0.178, 1.324] & 0.1014 & 0.1588 \\
+\end{longtable}
+}
+
+\vspace{6pt}
+\noindent{\footnotesize\textbf{Table S3c.} GTEx v2 Snaptron splice-junction read support across $\sim 19,000$ human RNA-seq samples for all five canonical coding Exon 1--6 introns and highest-abundance alternative junctions.\par}
+\vspace{3pt}
+{\scriptsize\setlength{\tabcolsep}{4.0pt}\renewcommand{\arraystretch}{1.08}
+\begin{longtable}{@{}lllrr@{}}
+\toprule
+\textbf{Gene} & \textbf{Junction Type} & \textbf{hg38 Intron Coordinates} & \textbf{Total Reads} & \textbf{Samples} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\gene{PRRC2A} & Canonical Intron 1-2 & \texttt{chr6:31,622,902-31,623,731} & 1,522,878 & 19,061 \\
+\gene{PRRC2A} & Canonical Intron 2-3 & \texttt{chr6:31,623,910-31,624,260} & 1,472,297 & 19,063 \\
+\gene{PRRC2A} & Canonical Intron 3-4 & \texttt{chr6:31,624,361-31,624,449} & 1,123,075 & 19,059 \\
+\gene{PRRC2A} & Canonical Intron 4-5 & \texttt{chr6:31,624,523-31,625,170} & 1,173,646 & 19,066 \\
+\gene{PRRC2A} & Canonical Intron 5-6 & \texttt{chr6:31,625,315-31,625,459} & 1,206,296 & 19,060 \\
+\gene{PRRC2A} & Top internal alt.\ junction & \texttt{chr6:31,622,902-31,624,260} & 6,811 & 4,279 \\
+\gene{PRRC2A} & Top Exon-1-skipping junction & \texttt{chr6:31,620,859-31,623,731} & 7,369 & 5,233 \\
+\gene{PRRC2B} & Canonical Intron 1-2 & \texttt{chr9:131,430,260-131,432,616} & 319,296 & 18,703 \\
+\gene{PRRC2B} & Canonical Intron 2-3 & \texttt{chr9:131,432,795-131,436,619} & 512,851 & 18,944 \\
+\gene{PRRC2B} & Canonical Intron 3-4 & \texttt{chr9:131,436,723-131,438,988} & 643,304 & 18,976 \\
+\gene{PRRC2B} & Canonical Intron 4-5 & \texttt{chr9:131,439,062-131,444,184} & 541,069 & 18,938 \\
+\gene{PRRC2B} & Canonical Intron 5-6 & \texttt{chr9:131,444,329-131,446,400} & 657,965 & 18,983 \\
+\gene{PRRC2B} & Top internal alt.\ junction & \texttt{chr9:131,436,896-131,438,988} & 5,655 & 3,898 \\
+\gene{PRRC2B} & Top Exon-1-skipping junction & \texttt{chr9:131,394,264-131,432,616} & 505 & 445 \\
+\end{longtable}
+}
+
+\newpage
+\section*{Supplementary Table S4: Complete Re-Annotation of All 45 ClinVar SNVs in Exons 2--6}
+\noindent{\footnotesize All 45 ClinVar coding SNVs falling within the dual-coding spans of human \gene{PRRC2A} and \gene{PRRC2B}. Variants altering the \gene{alt-PRRC2A/B} protein sequence ($n=23$) are highlighted in bold.\par}
+\vspace{3pt}
+{\scriptsize\setlength{\tabcolsep}{3.2pt}\renewcommand{\arraystretch}{1.06}
+\begin{longtable}{@{}llllllr@{}}
+\toprule
+\textbf{Gene} & \textbf{ClinVar ID} & \textbf{HGVS c.} & \textbf{ClinVar Significance} & \textbf{Frame-0 Effect} & \textbf{Frame-+2 Effect} & \textbf{+2 Pos} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Gene} & \textbf{ClinVar ID} & \textbf{HGVS c.} & \textbf{ClinVar Significance} & \textbf{Frame-0 Effect} & \textbf{Frame-+2 Effect} & \textbf{+2 Pos} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\gene{PRRC2A} & \texttt{3219591} & \texttt{c.314C$>$T} & Uncertain significance & \texttt{P105L} (MIS) & \texttt{A20A} (SYN) & 20 \\
+\gene{PRRC2A} & \texttt{3059974} & \texttt{c.317C$>$T} & Benign & \texttt{P106L} (MIS) & \texttt{A21A} (SYN) & 21 \\
+\gene{PRRC2A} & \texttt{2353247} & \texttt{c.335C$>$A} & Uncertain significance & \texttt{P112Q} (MIS) & \texttt{A27A} (SYN) & 27 \\
+\gene{PRRC2A} & \texttt{4145414} & \texttt{c.347C$>$T} & Uncertain significance & \texttt{T116M} (MIS) & \texttt{D31D} (SYN) & 31 \\
+\gene{PRRC2A} & \texttt{3426122} & \texttt{c.413G$>$A} & Uncertain significance & \texttt{G138E} (MIS) & \texttt{R53R} (SYN) & 53 \\
+\gene{PRRC2A} & \texttt{4325582} & \texttt{c.412G$>$A} & Unknown & \texttt{G138R} (MIS) & \textbf{\texttt{R53Q} (MIS)} & 53 \\
+\gene{PRRC2A} & \texttt{3219601} & \texttt{c.415G$>$A} & Uncertain significance & \texttt{V139I} (MIS) & \textbf{\texttt{G54D} (MIS)} & 54 \\
+\gene{PRRC2A} & \texttt{3219604} & \texttt{c.433G$>$A} & Uncertain significance & \texttt{A145T} (MIS) & \textbf{\texttt{S60N} (MIS)} & 60 \\
+\gene{PRRC2A} & \texttt{4572637} & \texttt{c.438C$>$A} & Uncertain significance & \texttt{S146R} (MIS) & \textbf{\texttt{R62S} (MIS)} & 62 \\
+\gene{PRRC2A} & \texttt{3050606} & \texttt{c.488C$>$T} & Benign & \texttt{S163L} (MIS) & \texttt{V78V} (SYN) & 78 \\
+\gene{PRRC2A} & \texttt{3783876} & \texttt{c.499C$>$G} & Uncertain significance & \texttt{R167G} (MIS) & \textbf{\texttt{S82W} (MIS)} & 82 \\
+\gene{PRRC2A} & \texttt{4145449} & \texttt{c.512C$>$T} & Uncertain significance & \texttt{P171L} (MIS) & \texttt{S86S} (SYN) & 86 \\
+\gene{PRRC2A} & \texttt{2325756} & \texttt{c.541A$>$G} & Uncertain significance & \texttt{K181E} (MIS) & \textbf{\texttt{Q96R} (MIS)} & 96 \\
+\gene{PRRC2A} & \texttt{2457238} & \texttt{c.545C$>$G} & Uncertain significance & \texttt{A182G} (MIS) & \texttt{G97G} (SYN) & 97 \\
+\gene{PRRC2A} & \texttt{2401614} & \texttt{c.547G$>$T} & Uncertain significance & \texttt{A183S} (MIS) & \textbf{\texttt{C98F} (MIS)} & 98 \\
+\gene{PRRC2A} & \texttt{2522928} & \texttt{c.575C$>$T} & Uncertain significance & \texttt{S192L} (MIS) & \texttt{V107V} (SYN) & 107 \\
+\gene{PRRC2A} & \texttt{3219616} & \texttt{c.599G$>$A} & Uncertain significance & \texttt{R200H} (MIS) & \texttt{P115P} (SYN) & 115 \\
+\gene{PRRC2A} & \texttt{2277970} & \texttt{c.608A$>$T} & Uncertain significance & \texttt{N203I} (MIS) & \textbf{\texttt{K118N} (MIS)} & 118 \\
+\gene{PRRC2A} & \texttt{4572663} & \texttt{c.613A$>$G} & Uncertain significance & \texttt{T205A} (MIS) & \textbf{\texttt{Y120C} (MIS)} & 120 \\
+\gene{PRRC2A} & \texttt{3056017} & \texttt{c.636G$>$T} & Benign & \texttt{G212G} (SYN) & \textbf{\texttt{A128S} (MIS)} & 128 \\
+\gene{PRRC2A} & \texttt{3219621} & \texttt{c.637C$>$T} & Uncertain significance & \texttt{R213C} (MIS) & \textbf{\texttt{A128V} (MIS)} & 128 \\
+\gene{PRRC2A} & \texttt{3938868} & \texttt{c.638G$>$A} & Uncertain significance & \texttt{R213H} (MIS) & \texttt{A128A} (SYN) & 128 \\
+\gene{PRRC2B} & \texttt{4572666} & \texttt{c.274G$>$T} & Uncertain significance & \texttt{D92Y} (MIS) & \textbf{\texttt{G6V} (MIS)} & 6 \\
+\gene{PRRC2B} & \texttt{3219648} & \texttt{c.299G$>$C} & Uncertain significance & \texttt{S100T} (MIS) & \textbf{\texttt{Q14H} (MIS)} & 14 \\
+\gene{PRRC2B} & \texttt{3938898} & \texttt{c.311C$>$G} & Uncertain significance & \texttt{S104C} (MIS) & \texttt{L18L} (SYN) & 18 \\
+\gene{PRRC2B} & \texttt{3426167} & \texttt{c.320C$>$T} & Uncertain significance & \texttt{P107L} (MIS) & \texttt{A21A} (SYN) & 21 \\
+\gene{PRRC2B} & \texttt{2383307} & \texttt{c.332C$>$T} & Uncertain significance & \texttt{P111L} (MIS) & \texttt{A25A} (SYN) & 25 \\
+\gene{PRRC2B} & \texttt{4145515} & \texttt{c.332C$>$A} & Uncertain significance & \texttt{P111Q} (MIS) & \texttt{A25A} (SYN) & 25 \\
+\gene{PRRC2B} & \texttt{3426150} & \texttt{c.338C$>$G} & Uncertain significance & \texttt{P113R} (MIS) & \texttt{A27A} (SYN) & 27 \\
+\gene{PRRC2B} & \texttt{3219655} & \texttt{c.374C$>$T} & Uncertain significance & \texttt{P125L} (MIS) & \texttt{T39T} (SYN) & 39 \\
+\gene{PRRC2B} & \texttt{4572678} & \texttt{c.394G$>$A} & Uncertain significance & \texttt{E132K} (MIS) & \textbf{\texttt{G46E} (MIS)} & 46 \\
+\gene{PRRC2B} & \texttt{3938909} & \texttt{c.488G$>$A} & Uncertain significance & \texttt{R163Q} (MIS) & \texttt{P77P} (SYN) & 77 \\
+\gene{PRRC2B} & \texttt{2218317} & \texttt{c.496T$>$G} & Uncertain significance & \texttt{S166A} (MIS) & \textbf{\texttt{I80S} (MIS)} & 80 \\
+\gene{PRRC2B} & \texttt{3426163} & \texttt{c.496T$>$A} & Uncertain significance & \texttt{S166T} (MIS) & \textbf{\texttt{I80N} (MIS)} & 80 \\
+\gene{PRRC2B} & \texttt{4145531} & \texttt{c.506C$>$T} & Uncertain significance & \texttt{P169L} (MIS) & \texttt{S83S} (SYN) & 83 \\
+\gene{PRRC2B} & \texttt{3938910} & \texttt{c.530C$>$T} & Uncertain significance & \texttt{A177V} (MIS) & \texttt{S91S} (SYN) & 91 \\
+\gene{PRRC2B} & \texttt{3426134} & \texttt{c.560A$>$T} & Uncertain significance & \texttt{E187V} (MIS) & \textbf{\texttt{R101S} (MIS)} & 101 \\
+\gene{PRRC2B} & \texttt{3219670} & \texttt{c.568G$>$A} & Uncertain significance & \texttt{V190I} (MIS) & \textbf{\texttt{R104H} (MIS)} & 104 \\
+\gene{PRRC2B} & \texttt{3938894} & \texttt{c.581C$>$T} & Uncertain significance & \texttt{S194L} (MIS) & \texttt{V108V} (SYN) & 108 \\
+\gene{PRRC2B} & \texttt{4572708} & \texttt{c.593G$>$A} & Uncertain significance & \texttt{G198E} (MIS) & \texttt{R112R} (SYN) & 112 \\
+\gene{PRRC2B} & \texttt{3938917} & \texttt{c.637G$>$A} & Uncertain significance & \texttt{G213S} (MIS) & \textbf{\texttt{R127Q} (MIS)} & 127 \\
+\gene{PRRC2B} & \texttt{2264936} & \texttt{c.649A$>$C} & Uncertain significance & \texttt{I217L} (MIS) & \textbf{\texttt{H131P} (MIS)} & 131 \\
+\gene{PRRC2B} & \texttt{2402049} & \texttt{c.649A$>$G} & Uncertain significance & \texttt{I217V} (MIS) & \textbf{\texttt{H131R} (MIS)} & 131 \\
+\gene{PRRC2B} & \texttt{4840619} & \texttt{c.667C$>$A} & Uncertain significance & \texttt{L223M} (MIS) & \textbf{\texttt{S137Y} (MIS)} & 137 \\
+\gene{PRRC2B} & \texttt{4145498} & \texttt{c.682A$>$G} & Uncertain significance & \texttt{T228A} (MIS) & \textbf{\texttt{N142S} (MIS)} & 142 \\
+\end{longtable}
+}
+
+\newpage
+\section*{Supplementary Table S5: All 42 Single-Nucleotide Silent-Frame-0 / Nonsense-+2 Switches}
+\noindent{\footnotesize Complete enumeration of every single-nucleotide substitution across human \gene{PRRC2A} ($n=22$) and \gene{PRRC2B} ($n=20$) that is strictly synonymous in Frame 0 while introducing a premature stop codon in Frame +2, audited directly against hg38 genomic DNA (including intronic flanks).\par}
+\vspace{3pt}
+{\fontsize{6.2}{7.6}\selectfont\setlength{\tabcolsep}{2.2pt}\renewcommand{\arraystretch}{1.08}
+\begin{longtable}{@{}lllllllll@{}}
+\toprule
+\textbf{Gene} & \textbf{CDS Sub.} & \textbf{hg38 Pos.} & \textbf{Ex.} & \textbf{Frame-0 (usage)} & \textbf{+2} & \textbf{PAM (p4--8)} & \textbf{Bystanders} & \textbf{Editor} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Gene} & \textbf{CDS Sub.} & \textbf{hg38 Pos.} & \textbf{Ex.} & \textbf{Frame-0 (usage)} & \textbf{+2} & \textbf{PAM (p4--8)} & \textbf{Bystanders} & \textbf{Editor} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\gene{PRRC2A} & \texttt{c.261A$>$T} & \texttt{chr6:31,623,880} & Ex2 & \texttt{A87A} (15.8$\rightarrow$18.4) & \texttt{K3*} & -- & N/A & PE / HDR \\
+\gene{PRRC2A} & \texttt{c.264C$>$T} & \texttt{chr6:31,623,883} & Ex2 & \texttt{S88S} (19.5$\rightarrow$12.1) & \texttt{Q4*} & NG:CGA(p6) & \textbf{None} & SpCas9-NG/SpRY CBE (clean; PAM CGA @ pos 6) \\
+\gene{PRRC2A} & \texttt{c.279C$>$T} & \texttt{chr6:31,623,898} & Ex2 & \texttt{S93S} (17.7$\rightarrow$15.2) & \texttt{R9*} & NG:AGA(p7) & -1C(MIS), +3C(SYN) & Prime Editing (C$>$T has F0-mis bystander) \\
+\gene{PRRC2A} & \texttt{c.285C$>$T} & \texttt{chr6:31,623,904} & Ex2 & \texttt{P95P} (19.8$\rightarrow$17.5) & \texttt{Q11*} & NGG:AGG(p7), NG:GGC(p6) & -3C(SYN), -2C(MIS), -1C(MIS) & Prime Editing (C$>$T has F0-mis bystander) \\
+\gene{PRRC2A} & \texttt{c.294C$>$T} & \texttt{chr6:31,624,264} & Ex3 & \texttt{S98S} (17.7$\rightarrow$15.2) & \texttt{R14*} & NG:AGC(p4) & -1C(MIS) & Prime Editing (C$>$T has F0-mis bystander) \\
+\gene{PRRC2A} & \texttt{c.318G$>$T} & \texttt{chr6:31,624,288} & Ex3 & \texttt{P106P} (6.9$\rightarrow$17.5) & \texttt{G22*} & -- & N/A & PE / HDR \\
+\gene{PRRC2A} & \texttt{c.357C$>$T} & \texttt{chr6:31,624,327} & Ex3 & \texttt{S119S} (17.7$\rightarrow$15.2) & \texttt{Q35*} & NG:CGA(p8) & -3C(SYN), -1C(MIS), +3C(SYN) & Prime Editing (C$>$T has F0-mis bystander) \\
+\gene{PRRC2A} & \texttt{c.366G$>$T} & \texttt{chr6:31,624,336} & Ex3 & \texttt{P122P} (6.9$\rightarrow$17.5) & \texttt{E38*} & -- & N/A & PE / HDR \\
+\gene{PRRC2A} & \texttt{c.387C$>$T} & \texttt{chr6:31,624,357} & Ex3 & \texttt{P129P} (19.8$\rightarrow$17.5) & \texttt{R45*} & NGG:TGG(p4) & -3C(SYN), -2C(MIS), -1C(MIS) & Prime Editing (C$>$T has F0-mis bystander) \\
+\gene{PRRC2A} & \texttt{c.408A$>$T} & \texttt{chr6:31,624,467} & Ex4 & \texttt{P136P} (16.9$\rightarrow$17.5) & \texttt{K52*} & -- & N/A & PE / HDR \\
+\gene{PRRC2A} & \texttt{c.417A$>$T} & \texttt{chr6:31,624,476} & Ex4 & \texttt{V139V} (7.1$\rightarrow$11.0) & \texttt{K55*} & -- & N/A & PE / HDR \\
+\gene{PRRC2A} & \texttt{c.435C$>$T} & \texttt{chr6:31,624,494} & Ex4 & \texttt{A145A} (27.7$\rightarrow$18.4) & \texttt{Q61*} & NG:AGC(p6), NG:GGA(p8) & -1C(MIS), +3C(SYN) & Prime Editing (C$>$T has F0-mis bystander) \\
+\gene{PRRC2A} & \texttt{c.459A$>$T} & \texttt{chr6:31,624,518} & Ex4 & \texttt{G153G} (16.5$\rightarrow$10.8) & \texttt{R69*} & -- & N/A & PE / HDR \\
+\gene{PRRC2A} & \texttt{c.468A$>$T} & \texttt{chr6:31,625,175} & Ex5 & \texttt{G156G} (16.5$\rightarrow$10.8) & \texttt{K72*} & -- & N/A & PE / HDR \\
+\gene{PRRC2A} & \texttt{c.477A$>$T} & \texttt{chr6:31,625,184} & Ex5 & \texttt{S159S} (12.2$\rightarrow$15.2) & \texttt{K75*} & -- & N/A & PE / HDR \\
+\gene{PRRC2A} & \texttt{c.499C$>$A} & \texttt{chr6:31,625,206} & Ex5 & \texttt{R167R} (6.2$\rightarrow$12.2) & \texttt{S82*} & -- & N/A & PE / HDR \\
+\gene{PRRC2A} & \texttt{c.501A$>$T} & \texttt{chr6:31,625,208} & Ex5 & \texttt{R167R} (6.2$\rightarrow$4.5) & \texttt{R83*} & -- & N/A & PE / HDR \\
+\gene{PRRC2A} & \texttt{c.531C$>$T} & \texttt{chr6:31,625,238} & Ex5 & \texttt{G177G} (22.2$\rightarrow$10.8) & \texttt{R93*} & NG:TGC(p6) & +3C(SYN) & SpCas9-NG/SpRY CBE (clean; PAM TGC @ pos 6) \\
+\gene{PRRC2A} & \texttt{c.540C$>$T} & \texttt{chr6:31,625,247} & Ex5 & \texttt{D180D} (25.1$\rightarrow$21.8) & \texttt{Q96*} & NGG:GGG(p4), NGG:AGG(p5) & \textbf{None} & SpCas9-NGG CBE (clean; PAM GGG @ pos 4) \\
+\gene{PRRC2A} & \texttt{c.549C$>$T} & \texttt{chr6:31,625,256} & Ex5 & \texttt{A183A} (27.7$\rightarrow$18.4) & \texttt{Q99*} & NG:TGC(p6) & -1C(MIS) & Prime Editing (C$>$T has F0-mis bystander) \\
+\gene{PRRC2A} & \texttt{c.567C$>$T} & \texttt{chr6:31,625,274} & Ex5 & \texttt{A189A} (27.7$\rightarrow$18.4) & \texttt{R105*} & NGG:GGG(p8), NG:GGC(p7) & -1C(MIS) & Prime Editing (C$>$T has F0-mis bystander) \\
+\gene{PRRC2A} & \texttt{c.591A$>$T} & \texttt{chr6:31,625,298} & Ex5 & \texttt{P197P} (16.9$\rightarrow$17.5) & \texttt{K113*} & -- & N/A & PE / HDR \\
+\gene{PRRC2B} & \texttt{c.264A$>$T} & \texttt{chr9:131,432,765} & Ex2 & \texttt{A88A} (15.8$\rightarrow$18.4) & \texttt{K3*} & -- & N/A & PE / HDR \\
+\gene{PRRC2B} & \texttt{c.267C$>$T} & \texttt{chr9:131,432,768} & Ex2 & \texttt{N89N} (19.1$\rightarrow$17.0) & \texttt{Q4*} & NG:AGA(p6) & \textbf{None} & SpCas9-NG/SpRY CBE (clean; PAM AGA @ pos 6) \\
+\gene{PRRC2B} & \texttt{c.288A$>$T} & \texttt{chr9:131,432,789} & Ex2 & \texttt{P96P} (16.9$\rightarrow$17.5) & \texttt{K11*} & -- & N/A & PE / HDR \\
+\gene{PRRC2B} & \texttt{c.297C$>$T} & \texttt{chr9:131,436,623} & Ex3 & \texttt{S99S} (17.7$\rightarrow$15.2) & \texttt{Q14*} & NG:AGC(p4) & -1C(MIS) & Prime Editing (C$>$T has F0-mis bystander) \\
+\gene{PRRC2B} & \texttt{c.321G$>$T} & \texttt{chr9:131,436,647} & Ex3 & \texttt{P107P} (6.9$\rightarrow$17.5) & \texttt{G22*} & -- & N/A & PE / HDR \\
+\gene{PRRC2B} & \texttt{c.360C$>$T} & \texttt{chr9:131,436,686} & Ex3 & \texttt{S120S} (17.7$\rightarrow$15.2) & \texttt{Q35*} & NG:CGA(p7) & -3C(SYN), -1C(MIS) & Prime Editing (C$>$T has F0-mis bystander) \\
+\gene{PRRC2B} & \texttt{c.387C$>$T} & \texttt{chr9:131,436,713} & Ex3 & \texttt{I129I} (20.8$\rightarrow$16.0) & \texttt{Q44*} & NG:TGC(p6), NG:GGT(p8) & \textbf{None} & SpCas9-NG/SpRY CBE (clean; PAM TGC @ pos 6) \\
+\gene{PRRC2B} & \texttt{c.402A$>$T} & \texttt{chr9:131,438,994} & Ex4 & \texttt{T134T} (15.1$\rightarrow$13.1) & \texttt{K49*} & -- & N/A & PE / HDR \\
+\gene{PRRC2B} & \texttt{c.423A$>$T} & \texttt{chr9:131,439,015} & Ex4 & \texttt{P141P} (16.9$\rightarrow$17.5) & \texttt{K56*} & -- & N/A & PE / HDR \\
+\gene{PRRC2B} & \texttt{c.441G$>$T} & \texttt{chr9:131,439,033} & Ex4 & \texttt{L147L} (39.6$\rightarrow$13.2) & \texttt{E62*} & -- & N/A & PE / HDR \\
+\gene{PRRC2B} & \texttt{c.447A$>$T} & \texttt{chr9:131,439,039} & Ex4 & \texttt{G149G} (16.5$\rightarrow$10.8) & \texttt{K64*} & -- & N/A & PE / HDR \\
+\gene{PRRC2B} & \texttt{c.462C$>$T} & \texttt{chr9:131,439,054} & Ex4 & \texttt{H154H} (15.1$\rightarrow$10.9) & \texttt{R69*} & NG:CGC(p6), NG:TGC(p8) & -2C(MIS) & Prime Editing (C$>$T has F0-mis bystander) \\
+\gene{PRRC2B} & \texttt{c.483A$>$T} & \texttt{chr9:131,444,198} & Ex5 & \texttt{S161S} (12.2$\rightarrow$15.2) & \texttt{K76*} & -- & N/A & PE / HDR \\
+\gene{PRRC2B} & \texttt{c.507C$>$T} & \texttt{chr9:131,444,222} & Ex5 & \texttt{P169P} (19.8$\rightarrow$17.5) & \texttt{R84*} & NG:TGA(p4), NG:CGC(p7) & -2C(MIS), -1C(MIS) & Prime Editing (C$>$T has F0-mis bystander) \\
+\gene{PRRC2B} & \texttt{c.525G$>$T} & \texttt{chr9:131,444,240} & Ex5 & \texttt{L175L} (39.6$\rightarrow$13.2) & \texttt{E90*} & -- & N/A & PE / HDR \\
+\gene{PRRC2B} & \texttt{c.546C$>$T} & \texttt{chr9:131,444,261} & Ex5 & \texttt{D182D} (25.1$\rightarrow$21.8) & \texttt{Q97*} & NGG:AGG(p4) & \textbf{None} & SpCas9-NGG CBE (clean; PAM AGG @ pos 4) \\
+\gene{PRRC2B} & \texttt{c.555C$>$T} & \texttt{chr9:131,444,270} & Ex5 & \texttt{G185G} (22.2$\rightarrow$10.8) & \texttt{Q100*} & -- & \textbf{None} & SpRY-CBE / Prime Editing (no NG/NGG PAM in pos 4-8) \\
+\gene{PRRC2B} & \texttt{c.597A$>$T} & \texttt{chr9:131,444,312} & Ex5 & \texttt{P199P} (16.9$\rightarrow$17.5) & \texttt{K114*} & -- & N/A & PE / HDR \\
+\gene{PRRC2B} & \texttt{c.621A$>$T} & \texttt{chr9:131,446,408} & Ex6 & \texttt{T207T} (15.1$\rightarrow$13.1) & \texttt{K122*} & -- & N/A & PE / HDR \\
+\gene{PRRC2B} & \texttt{c.669G$>$T} & \texttt{chr9:131,446,456} & Ex6 & \texttt{L223L} (39.6$\rightarrow$13.2) & \texttt{E138*} & -- & N/A & PE / HDR \\
+\end{longtable}
+}
+
+\end{document}
